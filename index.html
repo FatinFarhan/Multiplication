@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Multiplication</title>
+        <link rel="stylesheet" href="main.css" />        
+    </head>
+    <body>
+        <div id="container">
+            <div id="scoreBox">
+                <p>Score: <span id="score-id">0</span></p>
+            </div>
+            <div id="correct" style="display: none;"><p>Correct</p></div>
+            <div id="wrong" style="display: none;"><p>Try Again</p></div>
+            <div id="question"><p>4x2</p></div>
+            <div id="instruction"><p>Click on the correct answer</p></div>
+            <div id="answer-boxes">
+                <div class="answerBox" id="box1"><p>6</p></div>
+                <div class="answerBox" id="box2" onclick="initial()"><p>4</p></div>
+                <div class="answerBox" id="box3"><p>8</p></div>
+                <div class="answerBox" id="box4"><p>15</p></div>
+            </div>
+            <div id="start-reset" onclick="startGame()" ><p>Start Game</p></div>
+            <div id="timeBox" style="display: none;" >
+                <p>Time remaining: <span id="stopwatch">60</span> sec</p>
+            </div>
+            <div id="gameover" style="display: none;">
+                <p>Game over!<br/></p> Your Score is <span id="final-score">0</span></p>
+            </div>
+        </div>
+        <script src="javascript.js"></script>
+    </body>
+</html>
